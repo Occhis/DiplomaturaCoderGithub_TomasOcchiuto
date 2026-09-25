@@ -21,7 +21,6 @@ Para clonar y poner en marcha este proyecto en tu entorno local, seguí los sigu
 
 1. ### Instalación y clonación
 
-```bash
-git clone https://github.com/Occhis/DiplomaturaCoderGithub_TomasOcchiuto.git
-cd DiplomaturaCoderGithub_TomasOcchiuto
-```
+1. Clonar el repositorio:
+   ```bash
+   git clone [https://github.com/Occhis/DiplomaturaCoderGithub_TomasOcchiuto.git](https://github.com/Occhis/DiplomaturaCoderGithub_TomasOcchiuto.git)
