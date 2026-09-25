@@ -3,14 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diplomatura Coder - Proyecto Git</title>
+    <title>Diplomatura - Proyecto Git y Formulario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Bienvenido a mi repositorio de la Diplomatura</h1>
-    </header>
-    <main>
         <p>Proyecto base configurado para control de versiones con Git y GitHub.</p>
+    </header>
+
+    <main class="main-content">
+        <section class="form-container">
+            <h2>Contacto</h2>
+            <p class="mensaje">Por favor, complete el formulario para enviar su consulta.</p>
+            
+            <form action="/formulario" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Tomas Occhiuto">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Ej. tomas@hotmail.com">
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <select name="asunto" id="asunto">
+                        <option value="">--- Seleccione una opción ---</option>
+                        <option value="consulta discografica">Saber más mi carrera</option>
+                        <option value="consulta beatles">Saber más de mi stack</option>
+                        <option value="consulta integrantes">Saber más de mi</option>
+                        <option value="otras consultas">Otras consultas</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí..."></textarea>
+                </div>
+
+                <div class="campo btn-container">
+                    <input type="submit" value="Enviar Consulta" class="btn-submit">
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 </html>
